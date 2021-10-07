@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+
+        }
+  .convertor-body{
+      width: 420px;
+      height: 150px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      box-shadow: 0x 0px 2px 1px #cacacc;
+      background-color: seagreen;
+
+
+  }
+  .convertor-title{
+      text-align: center;
+      justify-items: center;
+      margin: 13px 0px;
+  }
+  input{
+      height: 25px;
+      text-align: center;
+      color: blue;
+      
+  }
+  #input
+  {
+      margin-left: 25px;
+
+  }
+  
+  #inputtype,#resulttype
+{
+    width: 176px;
+    margin-left: 25px;
+    color: red;
+}
+#resulttype
+{
+    margin-left: 14px;
+}
+    </style>
+    <script src="Convertor.js"></script>
+</head>
+<body>
+     <div class="convertor-body">
+         <h1 class="convertor-title">Length Convertor</h1>
+         <input  type="text" placeholder="input" id="input">
+         <span>=</span>
+         <input type="text" placeholder="Result" id="result">
+         <select id="inputtype">
+             <option value="meter">Meter</option>
+             <option value="kilometer">KiloMeter</option>
+             <option value="Centimeter">CentiMeter</option>
+         </select>
+         <select id="resulttype">
+            <option value="meter">Meter</option>
+            <option value="kilometer">KiloMeter</option>
+            <option value="Centimeter">CentiMeter</option>
+        </select>
+
+
+    </div>
+<script src="Convertor.js"></script>
+</body>
+</html>
